@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "automechs:block/mech_assembly_structure" }
+	}
+}

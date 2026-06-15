@@ -1,0 +1,22 @@
+{
+	"parent": "block/block",
+	"render_type": "minecraft:translucent",
+	"textures": {
+		"glass": "automechs:block/conduit_glass",
+		"particle": "automechs:block/conduit_glass"
+	},
+	"elements": [
+		{
+			"from": [5, 5, 5],
+			"to": [11, 11, 11],
+			"faces": {
+				"north": {"uv": [5, 5, 11, 11], "texture": "#glass"},
+				"east":  {"uv": [5, 5, 11, 11], "texture": "#glass"},
+				"south": {"uv": [5, 5, 11, 11], "texture": "#glass"},
+				"west":  {"uv": [5, 5, 11, 11], "texture": "#glass"},
+				"up":    {"uv": [5, 5, 11, 11], "texture": "#glass"},
+				"down":  {"uv": [5, 5, 11, 11], "texture": "#glass"}
+			}
+		}
+	]
+}

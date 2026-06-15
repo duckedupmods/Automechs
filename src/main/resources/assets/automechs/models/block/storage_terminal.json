@@ -1,0 +1,6 @@
+{
+	"__comment": "Rendered in-world by TerminalRenderer (ENTITYBLOCK_ANIMATED). Exists only for a particle texture + valid blockstate target.",
+	"textures": {
+		"particle": "automechs:block/storage_terminal"
+	}
+}

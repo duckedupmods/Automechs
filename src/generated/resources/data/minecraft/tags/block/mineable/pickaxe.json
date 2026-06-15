@@ -1,0 +1,15 @@
+{
+  "values": [
+    "automechs:assembly_workshop",
+    "automechs:mech_assembly_bench",
+    "automechs:mech_assembly_structure",
+    "automechs:upgrade_station",
+    "automechs:charging_pad",
+    "automechs:data_rack",
+    "automechs:main_drive",
+    "automechs:data_cable",
+    "automechs:storage_terminal",
+    "automechs:combustion_dynamo",
+    "automechs:power_conduit"
+  ]
+}

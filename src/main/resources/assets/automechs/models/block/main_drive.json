@@ -1,0 +1,6 @@
+{
+	"__comment": "Rendered in-world by MainDriveRenderer (ENTITYBLOCK_ANIMATED). Particle texture only.",
+	"textures": {
+		"particle": "automechs:block/main_drive"
+	}
+}

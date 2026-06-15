@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 6,
+			"bones": {
+				"ringA_spin": { "rotation": { "0": [0, 0, 0], "6": [0, 360, 0] } },
+				"ringB_spin": { "rotation": { "0": [0, 0, 0], "6": [0, -360, 0] } }
+			}
+		},
+		"work": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"ringA_spin": { "rotation": { "0": [0, 0, 0], "1": [0, 360, 0] } },
+				"ringB_spin": { "rotation": { "0": [0, 0, 0], "1": [0, -360, 0] } }
+			}
+		}
+	}
+}

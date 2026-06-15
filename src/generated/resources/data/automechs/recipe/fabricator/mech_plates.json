@@ -1,0 +1,17 @@
+{
+  "type": "automechs:assembly",
+  "ingredients": [
+    {
+      "count": 3,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "automechs:mech_plates"
+  }
+}

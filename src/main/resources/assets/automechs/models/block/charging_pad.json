@@ -1,0 +1,6 @@
+{
+	"__comment": "Rendered in-world by ChargingPadRenderer (ENTITYBLOCK_ANIMATED). Exists only for a particle texture + valid blockstate target.",
+	"textures": {
+		"particle": "automechs:block/charging_pad"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"__comment": "Rendered in-world by UpgradeStationRenderer (ENTITYBLOCK_ANIMATED). This model exists only so vanilla has a particle texture and a valid blockstate target.",
+	"textures": {
+		"particle": "automechs:block/upgrade_station"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"multipart": [
+		{ "apply": { "model": "automechs:block/conduit_core" } },
+
+		{ "when": { "north": "true" }, "apply": { "model": "automechs:block/conduit_arm" } },
+		{ "when": { "south": "true" }, "apply": { "model": "automechs:block/conduit_arm", "y": 180 } },
+		{ "when": { "east":  "true" }, "apply": { "model": "automechs:block/conduit_arm", "y": 90 } },
+		{ "when": { "west":  "true" }, "apply": { "model": "automechs:block/conduit_arm", "y": 270 } },
+		{ "when": { "up":    "true" }, "apply": { "model": "automechs:block/conduit_arm", "x": 270 } },
+		{ "when": { "down":  "true" }, "apply": { "model": "automechs:block/conduit_arm", "x": 90 } },
+
+		{ "when": { "powered": "true" }, "apply": { "model": "automechs:block/conduit_core_energy" } },
+		{ "when": { "north": "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy" } },
+		{ "when": { "south": "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy", "y": 180 } },
+		{ "when": { "east":  "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy", "y": 90 } },
+		{ "when": { "west":  "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy", "y": 270 } },
+		{ "when": { "up":    "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy", "x": 270 } },
+		{ "when": { "down":  "true", "powered": "true" }, "apply": { "model": "automechs:block/conduit_arm_energy", "x": 90 } }
+	]
+}

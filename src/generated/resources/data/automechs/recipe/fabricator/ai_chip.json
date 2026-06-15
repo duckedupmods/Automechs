@@ -1,0 +1,21 @@
+{
+  "type": "automechs:assembly",
+  "ingredients": [
+    {
+      "count": 2,
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "automechs:ai_chip"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "automechs:block/storage_terminal" },
+		"facing=east":  { "model": "automechs:block/storage_terminal", "y": 90 },
+		"facing=south": { "model": "automechs:block/storage_terminal", "y": 180 },
+		"facing=west":  { "model": "automechs:block/storage_terminal", "y": 270 }
+	}
+}

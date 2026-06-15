@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "automechs:block/combustion_dynamo_front_on",
+    "side": "automechs:block/combustion_dynamo_side",
+    "top": "automechs:block/combustion_dynamo_top"
+  }
+}

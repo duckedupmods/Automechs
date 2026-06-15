@@ -1,0 +1,21 @@
+{
+  "type": "automechs:assembly",
+  "ingredients": [
+    {
+      "count": 3,
+      "item": "minecraft:redstone"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "automechs:mech_core"
+  }
+}

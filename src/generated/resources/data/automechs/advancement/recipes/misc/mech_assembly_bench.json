@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_assembly_workshop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "automechs:assembly_workshop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "automechs:mech_assembly_bench"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_assembly_workshop"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "automechs:mech_assembly_bench"
+    ]
+  }
+}

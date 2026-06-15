@@ -1,0 +1,21 @@
+{
+  "type": "automechs:assembly",
+  "ingredients": [
+    {
+      "count": 2,
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:redstone"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:iron_sword"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "automechs:combat_circuit"
+  }
+}

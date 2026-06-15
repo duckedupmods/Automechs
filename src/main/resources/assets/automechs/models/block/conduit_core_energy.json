@@ -1,0 +1,21 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"energy": "automechs:block/conduit_energy",
+		"particle": "automechs:block/conduit_energy"
+	},
+	"elements": [
+		{
+			"from": [6.5, 6.5, 6.5],
+			"to": [9.5, 9.5, 9.5],
+			"faces": {
+				"north": {"uv": [6, 6, 10, 10], "texture": "#energy"},
+				"east":  {"uv": [6, 6, 10, 10], "texture": "#energy"},
+				"south": {"uv": [6, 6, 10, 10], "texture": "#energy"},
+				"west":  {"uv": [6, 6, 10, 10], "texture": "#energy"},
+				"up":    {"uv": [6, 6, 10, 10], "texture": "#energy"},
+				"down":  {"uv": [6, 6, 10, 10], "texture": "#energy"}
+			}
+		}
+	]
+}

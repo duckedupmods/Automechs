@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "RRR",
+    "NNN"
+  ],
+  "result": {
+    "count": 6,
+    "id": "automechs:power_conduit"
+  }
+}
