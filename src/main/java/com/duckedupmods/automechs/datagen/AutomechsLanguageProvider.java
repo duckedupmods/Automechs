@@ -192,8 +192,8 @@ public class AutomechsLanguageProvider extends LanguageProvider {
                         + "parts plus a role Circuit and power it: a mech assembles and deploys, bound to you. "
                         + "Sneak + right-click a mech to pack it back into a chassis item (upgrades kept).");
         guidePage("circuits", "Role Circuits",
-                "A circuit sets a mech's job. Fabricate the one you want — Mining, Farming, Storage, Building "
-                        + "or Combat — and slot it into the Robot Builder's circuit socket when assembling. "
+                "A circuit sets a mech's job. Fabricate the one you want — Mining, Farming, Building or "
+                        + "Combat — and slot it into the Robot Builder's circuit socket when assembling. "
                         + "Hover each to read its role. The following pages cover every role in turn.");
         guidePage("mining", "Mining Mech",
                 "Open it and press Quarry, then aim to place a box: it digs the area top-down, stores drops, "
@@ -223,6 +223,35 @@ public class AutomechsLanguageProvider extends LanguageProvider {
                 "This manual. Cheap to craft — a book, redstone and glowstone — so you can read it from the "
                         + "very start. Right-click to open it anywhere. Keep it handy while you learn the "
                         + "ropes; every machine, role and upgrade is indexed on the Contents page.");
+        guidePage("storage", "Data Storage Network",
+                "A second kind of automation: an AE2-style storage network running on Forge Energy. A Main "
+                        + "Drive powers a web of Data Cables that link Data Racks (the storage) to a Storage "
+                        + "Terminal (your access screen). Racks fragment as they fill, and little Cache Crawler "
+                        + "bots scuttle over and defragment them. No power, no access — but your items always "
+                        + "stay safe.");
+        guidePage("main_drive", "Main Drive",
+                "The network's controller and power supply. Feed it Forge Energy from any cable and it floods "
+                        + "the connected Data Cables to find and run your Racks and Terminal. Its draw scales "
+                        + "with how many racks and how much data it powers; if its buffer runs dry the network "
+                        + "goes offline (stored items stay safe). Its face shows live status.");
+        guidePage("data_cable", "Data Cable",
+                "Cheap network wiring — one craft makes eight. Cables connect the Main Drive to its Data Racks "
+                        + "and the Storage Terminal; everything joined by an unbroken cable run is one network. "
+                        + "Lay them through your storage room to wire it all together.");
+        guidePage("data_rack", "Data Rack",
+                "The storage cabinet. Each rack holds many 'data sectors'; inserted items scatter across free "
+                        + "sectors, so a rack fragments as it fills — its face shows Defrag% and item count. "
+                        + "Add more racks for more capacity. Fragmented racks waste space until a Cache Crawler "
+                        + "compacts them.");
+        guidePage("storage_terminal", "Storage Terminal",
+                "Your window into the whole network: an ME-style grid showing every item aggregated across all "
+                        + "racks. Shift-click from your inventory to store; click an item to pull a stack out. "
+                        + "The left toolbar sorts by amount, name or mod. Needs the Main Drive online to work.");
+        guidePage("cache_crawler", "Cache Crawler",
+                "A little spider-bot that keeps your storage tidy. It scuttles across nearby Data Racks and "
+                        + "defragments them — merging scattered fragments of the same item into full stacks and "
+                        + "compacting them to the front, freeing sectors. Craft a few from an AI Chip, place "
+                        + "them near your racks, and they maintain the network on their own.");
         guidePage("upgrade_station", "Upgrade Station",
                 "Pack a mech into its chassis and place it on the right, a module on the left, then power the "
                         + "station: the module is stamped onto the chassis. Redeploy to apply. The next pages "

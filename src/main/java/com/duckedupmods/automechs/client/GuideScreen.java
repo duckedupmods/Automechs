@@ -182,6 +182,39 @@ public class GuideScreen extends Screen {
                         Items.REDSTONE.getDefaultInstance(),
                         Items.GLOWSTONE_DUST.getDefaultInstance())));
 
+        // Data storage network (v0.2): an FE-powered, AE2-style storage system + defrag bots.
+        pages.add(new Page("storage", ModItems.STORAGE_TERMINAL.get().getDefaultInstance(), body("storage"),
+                itemCard(ModItems.MAIN_DRIVE.get().getDefaultInstance(), "Powered Network")));
+        pages.add(new Page("main_drive", ModItems.MAIN_DRIVE.get().getDefaultInstance(), body("main_drive"),
+                recipe(ModItems.MAIN_DRIVE.get().getDefaultInstance(), 1, "IGI", "RDR", "ICI",
+                        Map.of('I', Items.IRON_INGOT.getDefaultInstance(),
+                                'G', Items.GLASS_PANE.getDefaultInstance(),
+                                'R', Items.REDSTONE.getDefaultInstance(),
+                                'D', Items.DIAMOND.getDefaultInstance(),
+                                'C', chip))));
+        pages.add(new Page("data_cable", ModItems.DATA_CABLE.get().getDefaultInstance(), body("data_cable"),
+                recipe(ModItems.DATA_CABLE.get().getDefaultInstance(), 8, "NNN", "RGR", "NNN",
+                        Map.of('N', Items.IRON_NUGGET.getDefaultInstance(),
+                                'R', Items.REDSTONE.getDefaultInstance(),
+                                'G', Items.GLASS_PANE.getDefaultInstance()))));
+        pages.add(new Page("data_rack", ModItems.DATA_RACK.get().getDefaultInstance(), body("data_rack"),
+                recipe(ModItems.DATA_RACK.get().getDefaultInstance(), 1, "IGI", "RCR", "IGI",
+                        Map.of('I', Items.IRON_INGOT.getDefaultInstance(),
+                                'G', Items.GLASS_PANE.getDefaultInstance(),
+                                'R', Items.REDSTONE.getDefaultInstance(),
+                                'C', Blocks.CHEST.asItem().getDefaultInstance()))));
+        pages.add(new Page("storage_terminal", ModItems.STORAGE_TERMINAL.get().getDefaultInstance(), body("storage_terminal"),
+                recipe(ModItems.STORAGE_TERMINAL.get().getDefaultInstance(), 1, "IGI", "GCG", "IRI",
+                        Map.of('I', Items.IRON_INGOT.getDefaultInstance(),
+                                'G', Items.GLASS_PANE.getDefaultInstance(),
+                                'C', chip,
+                                'R', Items.REDSTONE.getDefaultInstance()))));
+        pages.add(new Page("cache_crawler", ModItems.CACHE_CRAWLER_SPAWN_EGG.get().getDefaultInstance(), body("cache_crawler"),
+                recipe(ModItems.CACHE_CRAWLER_SPAWN_EGG.get().getDefaultInstance(), 1, "N N", "RCR", "N N",
+                        Map.of('N', Items.IRON_NUGGET.getDefaultInstance(),
+                                'R', Items.REDSTONE.getDefaultInstance(),
+                                'C', chip))));
+
         // Upgrades
         pages.add(new Page("upgrade_station", ModItems.UPGRADE_STATION.get().getDefaultInstance(), body("upgrade_station"),
                 recipe(ModItems.UPGRADE_STATION.get().getDefaultInstance(), 1, "ICI", "RAR", "III",
@@ -563,6 +596,20 @@ public class GuideScreen extends Screen {
             }
             String catName = this.focused != null ? CATALYST.get(this.focused).getHoverName().getString() : "Catalyst";
             caption(g, "Frame + " + catName, ax, ay, aw, ah);
+        };
+    }
+
+    /** A single large item centred in the art box with a caption — for entries without a crafting recipe. */
+    private Panel itemCard(ItemStack showcase, String caption) {
+        return (g, ax, ay, aw, ah, mouseX, mouseY) -> {
+            int cx = ax + aw / 2 - 8;
+            int cy = ay + (ah - 12) / 2 - 8;
+            GuiHelper.darkSlot(g, cx, cy);
+            g.renderItem(showcase, cx, cy);
+            if (mouseX >= cx && mouseX < cx + 16 && mouseY >= cy && mouseY < cy + 16) {
+                queueStackTooltip(showcase, mouseX, mouseY);
+            }
+            caption(g, caption, ax, ay, aw, ah);
         };
     }
 

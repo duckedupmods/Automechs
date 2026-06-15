@@ -105,6 +105,17 @@ public class AutomechsRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_ai_chip", has(ModItems.AI_CHIP.get()))
                 .save(recipeOutput);
 
+        // Cache Crawler — a small defrag spider-bot: an AI-chip body with redstone and iron-nugget legs.
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CACHE_CRAWLER_SPAWN_EGG.get())
+                .pattern("N N")
+                .pattern("RCR")
+                .pattern("N N")
+                .define('N', Items.IRON_NUGGET)
+                .define('R', Items.REDSTONE)
+                .define('C', ModItems.AI_CHIP.get())
+                .unlockedBy("has_ai_chip", has(ModItems.AI_CHIP.get()))
+                .save(recipeOutput);
+
         // Combustion Dynamo — a furnace core wrapped in iron, with copper coils and a redstone regulator.
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COMBUSTION_DYNAMO.get())
                 .pattern("ICI")
