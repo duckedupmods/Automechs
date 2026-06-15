@@ -36,6 +36,12 @@ First public release ships as **v0.2.0** to **CurseForge** (ATM source) + a **Mo
 (modpack permission granted), source on **GitHub** (`duckedupmods/Automechs`). CurseForge does *not* require
 GitHub — the jar uploads directly — but the repo gives us an issue tracker + open-source credibility.
 
+**Status:** the name is locked as **Automechs** (the `automechs` modid is wired through ~400 files; the
+display name stays Automechs). Source is now **public** at github.com/duckedupmods/Automechs — pushed as a
+single clean root commit with local-only tooling (`.mcp.json` API key, `CLAUDE.md`) gitignored and scrubbed
+from history. **Next:** bump `mod_version` 0.1.0 → 0.2.0, name the jar `automechs-1.21.1-0.2.0.jar`, write
+`CHANGELOG.md`, run the dedicated-server smoke test (the ATM gate), then upload to CurseForge + Modrinth.
+
 ## 2026-06-06 — Mechs as ROLES, not power tiers (+ modular upgrades)
 
 The three mech models (built & in-game) are being **re-framed from a power ladder into job
